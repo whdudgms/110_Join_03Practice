@@ -32,7 +32,6 @@ public class MemberService {
 		String inputPasswd = encoder.getSecurePassword(params.get("passwd"));
 		
 		return inputPasswd.equals(passwd);
-
 		
 	}
 	
