@@ -31,11 +31,8 @@ public class MemberService {
 		Sha512Encoder encoder = Sha512Encoder.getInstance();
 		String inputPasswd = encoder.getSecurePassword(params.get("passwd"));
 		
-		if(inputPasswd.equals(passwd)) {
-		return true;
-		}else {
-			return false;
-		}
+		return inputPasswd.equals(passwd);
+
 		
 	}
 	
