@@ -50,16 +50,9 @@ public class MemberService {
 	}
 	params.put("memberId", params.get("memberName"));
 	params.put("passwd",encoder.getSecurePassword(params.get("passwd1")));
-	System.out.println("입력받은  값.");
-	System.out.println(params);
-	if(memberDao.insertMember(params) ==1) {
-		System.out.println("true1");
-		return true;
-	}else {
-		System.out.println("false2");
-		return false;
-	}
 	
+	return memberDao.insertMember(params) == 1;
+
 		
 	}
 	
