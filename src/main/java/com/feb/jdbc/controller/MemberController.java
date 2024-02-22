@@ -20,10 +20,10 @@ public class MemberController {
 	MemberService memberService;
 	
 	
-	@GetMapping("hello.do")
+	@GetMapping("index.do")
 	public ModelAndView hello() {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("resultMsg","helloOk");
+		mv.addObject("resultMsg","indexOk");
 
 		mv.setViewName("login");
 		return mv;
