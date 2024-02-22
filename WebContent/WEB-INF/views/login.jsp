@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-<link rel="stylesheet" href="/resources/style.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 <script>
 	var resultMsg = '${resultMsg}';
 	alert(resultMsg);
@@ -34,7 +34,7 @@
         <div class="bar"></div>
       </div>
       <div class="input-container">
-        <input type="oassword" id="passwd" name="passwd" required="required"/>
+        <input type="password" id="passwd" name="passwd" required="required"/>
         <label>Password</label>
         <div class="bar"></div>
       </div>
@@ -77,7 +77,7 @@
 <a id="codepen" href="https://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="/resources/script.js"></script>
+  <script  src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 
 </body>
 </html>
